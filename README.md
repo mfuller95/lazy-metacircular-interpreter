@@ -27,6 +27,12 @@ Extending Features
 	- Add the following primitive operations:  `+`, `*`, `-`, `/`, `<`, `<=`, `=`, `>=`, `>`, and `error`.
 	- The `error` primitive takes no arguments and abort the interpreter with the message "Metacircular Interpreter Aborted".
  2. **Implementing `and` and `or`**
-	- **a. `and` expression: ` (and <test> ...) `**:
+	- **`and` expression: ` (and <test> ...) `**:
 The `<test>` expressions are evaluated from left to right, and the value of the first expression that evaluates to a false value is returned. Any remaining expressions are not evaluated. If all the expressions evaluate to true values, the value of the last expression is returned. If there are no expressions then #t is returned.
 Examples: 
+```
+(and (= 2 2) (> 2 1))                   ===>  #t
+(and (= 2 2) (< 2 1))                   ===>  #f
+(and 1 2 'c '(f g))                     ===>  (f g)
+(and)                                   ===>  #t
+```
