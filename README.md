@@ -43,7 +43,7 @@ Examples: </p>
 (<span class="hljs-keyword">and</span> <span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-string">'c '</span>(f g))                     ===&gt;  (f g)
 (<span class="hljs-keyword">and</span>)                                   ===&gt;  <span class="hljs-comment">#t</span></code></pre></li>
 <li><p><strong><code>or</code> expression: <code>(or &lt;test&gt; ...)</code></strong>: <br>
-The  expressions are evaluated from left to right, and the value of the first expression that evaluates to a true value (see section 6.3.1) is returned. Any remaining expressions are not evaluated. If all expressions evaluate to false values, the value of the last expression is returned. If there are no expressions then #f is returned. <br>
+The  expressions are evaluated from left to right, and the value of the first expression that evaluates to a true value is returned. Any remaining expressions are not evaluated. If all expressions evaluate to false values, the value of the last expression is returned. If there are no expressions then #f is returned. <br>
 Examples:</p>
 
 <pre class="prettyprint"><code class=" hljs php">(<span class="hljs-keyword">or</span> (= <span class="hljs-number">2</span> <span class="hljs-number">2</span>) (&gt; <span class="hljs-number">2</span> <span class="hljs-number">1</span>))                    ===&gt;  <span class="hljs-comment">#t</span>
