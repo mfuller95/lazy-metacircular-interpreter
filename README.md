@@ -1,6 +1,6 @@
 <h1 id="lazy-metacircular-interpreter">Lazy Metacircular Interpreter</h1>
 
-<p>In this project, I modified the <strong>metacircular interpreter</strong> from SICP, available <a href="http://mitpress.mit.edu/sicp/code/ch4-mceval.scm">here</a>.</p>
+<p>In this project, I added more features for the <strong>metacircular interpreter</strong> from SICP, available <a href="http://mitpress.mit.edu/sicp/code/ch4-mceval.scm">here</a>.</p>
 
 
 
