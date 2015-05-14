@@ -1,6 +1,6 @@
 <h1 id="lazy-metacircular-interpreter">Lazy Metacircular Interpreter</h1>
 
-<p>In this project, I added more features for the <strong>metacircular interpreter</strong> from SICP, available <a href="http://mitpress.mit.edu/sicp/code/ch4-mceval.scm">here</a>.</p>
+<p>In this project, I modified the <strong>metacircular interpreter</strong> from SICP, available <a href="http://mitpress.mit.edu/sicp/code/ch4-mceval.scm">here</a>.</p>
 
 
 
@@ -13,14 +13,12 @@
 <p>There are two ways to test the evaluator:</p>
 
 <ol>
-    <li>Execute `(driver-loop)` from the `mit-scheme` REPL. The driver loop will read in Scheme expressions and pass them to your interpreter for evaluation.</li>
-    <li>Call the `eval` function with an expression and a global environment from the `mit-scheme` REPL. For example:</li>
+    <li>Execute <code>(driver-loop)</code> from the <code>mit-scheme</code> REPL. The driver loop will read in Scheme expressions and pass them to your interpreter for evaluation.</li>
+    <li>Call the <code>eval</code> function with an expression and a global environment from the <code>mit-scheme</code> REPL. For example:</li>
 </ol>
 
 <pre><code>(eval '(+ 2 3) the-global-environment)
 </code></pre>
-
-
 
 <h2 id="original-features">Original Features</h2>
 
